@@ -14,7 +14,22 @@
 
 // ++ YOUR CODE below
 
-
+function hasComplements(number, array) {
+    var value = 0;
+    for(var i = 0; i < array.length; i++){
+        for(var j = i+1; j < array.length; j++){
+            if(array[i] + array[j] === number){
+                value++;
+            }
+        }
+    }
+    if(value > 0) {
+      return true;
+    }
+    else {
+      return false;
+    }
+}
 
 
 
